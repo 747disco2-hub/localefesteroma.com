@@ -29,9 +29,9 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_28%,hsl(var(--primary)/0.18),transparent_38%)]" />
 
       <div className="relative z-10 container mx-auto px-4 pt-24">
-        <div className="max-w-4xl mx-auto text-center hero-content-shell">
+        <div className="max-w-4xl mx-auto text-center">
           <motion.div 
-            className="inline-flex items-center gap-2 rounded-full bg-primary/15 border border-primary/40 px-4 py-2 mb-7 shadow-[0_0_30px_hsl(var(--primary)/0.12)] hero-eyebrow"
+            className="inline-flex items-center gap-2 rounded-full bg-background/65 border border-primary/45 px-4 py-2 mb-7"
             initial={reduceMotion ? false : { opacity: 0, y: -12 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.08, duration: 0.45 }}
@@ -54,7 +54,7 @@ export default function HeroSection() {
 
           {/* Tagline */}
           <motion.p 
-            className="text-2xl md:text-4xl text-foreground font-semibold leading-tight mb-4 max-w-3xl mx-auto text-balance hero-headline"
+            className="text-2xl md:text-4xl text-foreground font-semibold leading-tight mb-4 max-w-3xl mx-auto text-balance tracking-tight"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.26, duration: 0.5 }}
@@ -63,7 +63,7 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.p 
-            className="text-base md:text-lg text-foreground/85 mb-9 max-w-2xl mx-auto leading-relaxed hero-description"
+            className="text-base md:text-lg text-foreground/90 mb-9 max-w-2xl mx-auto leading-relaxed"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.34, duration: 0.5 }}
@@ -74,7 +74,7 @@ export default function HeroSection() {
 
           {/* USP Pills */}
           <motion.div 
-            className="flex flex-wrap justify-center gap-3 mb-9 hero-pill-group"
+            className="flex flex-wrap justify-center gap-3 mb-9"
             initial={reduceMotion ? false : { opacity: 0, y: 10 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.42, duration: 0.45 }}
@@ -95,7 +95,7 @@ export default function HeroSection() {
 
           {/* Main CTA */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12 hero-actions"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5 }}

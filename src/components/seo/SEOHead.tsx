@@ -19,6 +19,7 @@ export default function SEOHead({
 }: SEOHeadProps) {
   const siteUrl = "https://localefesteroma.com";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
+  const socialImage = `${siteUrl}/wp-content/themes/locale-feste-roma/assets/pista-da-ballo-CaYN8pI_.jpg`;
 
   return (
     <Helmet>
@@ -33,6 +34,8 @@ export default function SEOHead({
       <meta property="og:url" content={fullCanonical} />
       <meta property="og:site_name" content="LocaleFesteRoma" />
       <meta property="og:locale" content="it_IT" />
+      <meta property="og:image" content={socialImage} />
+      <meta property="og:image:alt" content="747 Disco, discoteca privata per feste a Roma" />
 
       {/* Article specific */}
       {type === "article" && publishedTime && (
@@ -46,9 +49,10 @@ export default function SEOHead({
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
+      <meta name="twitter:image" content={socialImage} />
 
       {/* Additional SEO */}
-      <meta name="robots" content="index, follow" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
       <meta name="language" content="Italian" />
       <meta name="geo.region" content="IT-RM" />
       <meta name="geo.placename" content="Roma" />

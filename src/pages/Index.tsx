@@ -81,6 +81,8 @@ const structuredData = {
   "description": "Discoteca privata per feste di 18 anni, compleanni ed eventi a Roma. Pacchetti all-inclusive con DJ, catering e open bar da €1.590.",
   "url": "https://localefesteroma.com",
   "telephone": "+39 3343662827",
+  "areaServed": ["Roma", "Ciampino", "Castelli Romani"],
+  "knowsAbout": ["Feste di 18 anni", "Feste private", "Compleanni", "Eventi privati"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Viale J. F. Kennedy, 131",

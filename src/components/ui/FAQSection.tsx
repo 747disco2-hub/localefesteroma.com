@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import FAQSchema, { FAQItem } from "@/components/seo/FAQSchema";
+import { FAQItem } from "@/components/seo/FAQSchema";
 
 interface FAQSectionProps {
   title?: string;
@@ -18,17 +18,22 @@ export default function FAQSection({
   className = "",
 }: FAQSectionProps) {
   return (
-    <section className={`section-padding ${className}`}>
-      <FAQSchema faqs={faqs} />
+    <section className={`section-padding faq-section ${className}`} aria-labelledby="faq-title">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-center mb-10">{title}</h2>
-        <Accordion type="single" collapsible className="w-full">
+        <header className="text-center mb-10 md:mb-12">
+          <p className="text-primary text-sm font-semibold uppercase tracking-[0.18em] mb-3">Informazioni utili</p>
+          <h2 id="faq-title" className="text-3xl md:text-4xl font-semibold tracking-tight text-foreground">{title}</h2>
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Risposte chiare su costi, disponibilità e organizzazione della tua festa privata a Roma.
+          </p>
+        </header>
+        <Accordion type="single" collapsible className="w-full space-y-3">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
-              <AccordionTrigger className="text-left font-medium text-foreground hover:text-primary">
+            <AccordionItem key={index} value={`item-${index}`} className="faq-item">
+              <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary no-underline hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed">
+              <AccordionContent className="text-muted-foreground leading-relaxed pr-10">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

@@ -50,7 +50,6 @@
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Montserrat', sans-serif;
-    background-image: radial-gradient(circle at 15% -10%, hsl(var(--primary) / 0.09), transparent 30%), radial-gradient(circle at 90% 15%, hsl(var(--accent) / 0.07), transparent 24%);
     letter-spacing: -0.01em;
   }
 
@@ -94,11 +93,7 @@ section {
 }
 
 .hero-surface::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background-image: linear-gradient(115deg, transparent 38%, hsl(var(--primary) / 0.12), transparent 58%);
+  display: none;
 }
 
 .hero-readable-overlay {
@@ -113,42 +108,22 @@ section {
   );
 }
 
-/* Gerarchia editoriale e superfici morbide, ispirate alla semplicità Apple. */
-.hero-content-shell {
-  padding: 2.25rem 1.25rem;
-  border: 1px solid hsl(0 0% 100% / 0.12);
-  border-radius: 2rem;
-  background: linear-gradient(140deg, hsl(var(--background) / 0.48), hsl(var(--background) / 0.14));
-  box-shadow: 0 32px 80px rgb(0 0 0 / 0.24), inset 0 1px 0 hsl(0 0% 100% / 0.08);
-  backdrop-filter: blur(8px);
+.faq-section {
+  background: hsl(var(--background));
 }
 
-.hero-headline {
-  letter-spacing: -0.04em;
+.faq-item {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.9rem;
+  background: hsl(var(--card));
+  padding: 0 1.25rem;
+  transition: border-color 180ms ease, background-color 180ms ease;
 }
 
-.hero-description {
-  letter-spacing: -0.012em;
-}
-
-.hero-eyebrow,
-.hero-pill-group > div,
-.hero-actions a {
-  transition: transform 220ms ease, box-shadow 220ms ease, background-color 220ms ease;
-}
-
-.hero-pill-group > div {
-  box-shadow: inset 0 1px 0 hsl(0 0% 100% / 0.08), 0 10px 28px rgb(0 0 0 / 0.16);
-}
-
-.hero-actions a:hover {
-  transform: translateY(-2px);
-}
-
-@media (min-width: 768px) {
-  .hero-content-shell {
-    padding: 3.5rem 4rem;
-  }
+.faq-item:hover,
+.faq-item:has([data-state='open']) {
+  border-color: hsl(var(--primary) / 0.62);
+  background: hsl(var(--card) / 0.98);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -9,6 +9,9 @@ defined( 'ABSPATH' ) || exit;
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="747 Disco è una discoteca privata a Roma per feste di 18 anni, compleanni ed eventi: pacchetti con DJ, catering e open bar.">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+	<link rel="canonical" href="<?php echo esc_url( is_front_page() ? home_url( '/' ) : get_permalink() ); ?>">
 	<link rel="icon" href="<?php echo esc_url( get_template_directory_uri() . '/favicon.webp' ); ?>" type="image/webp">
 	<?php wp_head(); ?>
 </head>
