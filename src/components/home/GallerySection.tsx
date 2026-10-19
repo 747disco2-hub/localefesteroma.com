@@ -17,7 +17,7 @@ const galleryImages = [
 
 export default function GallerySection() {
   return (
-    <section className="py-20 bg-background">
+    <section className="py-20 bg-background section-deferred">
       <div className="container mx-auto px-4">
         <motion.div 
           className="text-center mb-12"
@@ -38,7 +38,7 @@ export default function GallerySection() {
           {galleryImages.map((img, i) => (
             <motion.div
               key={i}
-              className="relative overflow-hidden group"
+              className="relative overflow-hidden rounded-xl group shadow-[0_16px_35px_rgba(0,0,0,0.2)]"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -47,7 +47,7 @@ export default function GallerySection() {
               <img
                 src={img.src}
                 alt={img.alt}
-                className="w-full h-full object-cover aspect-square transition-transform duration-500 group-hover:scale-110"
+                className="w-full h-full object-cover aspect-square transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
                 decoding="async"
               />

@@ -20,14 +20,15 @@ export default function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur-md" : "bg-background/80"
+        scrolled ? "bg-background/95 backdrop-blur-md shadow-[0_8px_30px_rgba(0,0,0,0.2)] border-b border-white/5" : "bg-background/60"
       }`}
     >
       <div className="container mx-auto px-4">
@@ -43,10 +44,10 @@ export default function Header() {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`text-sm font-medium uppercase tracking-wider transition-colors ${
+                className={`relative text-sm font-medium uppercase tracking-wider transition-colors after:absolute after:-bottom-2 after:left-0 after:h-px after:bg-primary after:transition-all ${
                   location.pathname === item.href
-                    ? "text-primary"
-                    : "text-foreground/80 hover:text-primary"
+                    ? "text-primary after:w-full"
+                    : "text-foreground/80 hover:text-primary after:w-0 hover:after:w-full"
                 }`}
               >
                 {item.label}
@@ -80,7 +81,7 @@ export default function Header() {
             </a>
             <a
               href="tel:+393343662827"
-              className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 font-semibold hover:bg-primary/90 transition-colors text-sm"
+              className="flex items-center gap-2 rounded-lg bg-primary text-primary-foreground px-5 py-2.5 font-semibold hover:bg-primary/90 transition-colors text-sm shadow-[0_8px_20px_hsl(var(--primary)/0.2)]"
             >
               <Phone className="h-4 w-4" />
               Chiama Ora

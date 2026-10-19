@@ -154,7 +154,7 @@ export default function Index() {
       <HeroSection />
       
       {/* Guide Section - SEO Hub */}
-      <section className="py-20 bg-card">
+      <section className="py-20 bg-card section-deferred">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold uppercase tracking-wider mb-4">
@@ -170,7 +170,7 @@ export default function Index() {
               <Link
                 key={guide.href}
                 to={guide.href}
-                className="group bg-background border border-border p-6 hover:border-primary transition-all duration-300"
+                className="group rounded-xl bg-background border border-border p-6 hover:border-primary hover:-translate-y-1 hover:shadow-[0_16px_35px_rgba(0,0,0,0.18)] transition-all duration-300"
               >
                 <guide.icon className="h-10 w-10 text-primary mb-4" />
                 <h3 className="font-bold text-lg mb-2 group-hover:text-primary transition-colors">

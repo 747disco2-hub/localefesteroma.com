@@ -62,7 +62,7 @@ export default function PackagesSection() {
   const [showFullMenu, setShowFullMenu] = useState(false);
 
   return (
-    <section id="pacchetti" className="py-20 bg-card">
+    <section id="pacchetti" className="py-20 bg-card section-deferred">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wider">
@@ -79,14 +79,14 @@ export default function PackagesSection() {
           {packages.map((pkg, index) => (
             <div
               key={index}
-              className={`relative border p-6 flex flex-col ${
+              className={`relative rounded-2xl border p-6 flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_18px_45px_rgba(0,0,0,0.22)] ${
                 pkg.featured
                   ? "border-primary bg-primary/5"
                   : "border-border bg-background"
               }`}
             >
               {pkg.featured && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground px-4 py-1 text-xs font-bold uppercase tracking-wider flex items-center gap-1">
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 rounded-full bg-primary text-primary-foreground px-4 py-1 text-xs font-bold uppercase tracking-wider flex items-center gap-1 shadow-lg">
                   <Star className="h-3 w-3" />
                   Più Richiesto
                 </div>
@@ -115,8 +115,8 @@ export default function PackagesSection() {
                 href="tel:+393343662827"
                 className={`flex items-center justify-center gap-2 w-full py-4 font-bold transition-colors ${
                   pkg.featured
-                    ? "bg-primary text-primary-foreground hover:bg-primary/90"
-                    : "bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground"
+                  ? "rounded-lg bg-primary text-primary-foreground hover:bg-primary/90"
+                    : "rounded-lg bg-secondary text-secondary-foreground hover:bg-primary hover:text-primary-foreground"
                 }`}
               >
                 <Phone className="h-4 w-4" />
