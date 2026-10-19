@@ -15,6 +15,7 @@ defined( 'ABSPATH' ) || exit;
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
 <div id="root"></div>
+<script>window.localeFesteThemeUrl = <?php echo wp_json_encode( get_template_directory_uri() ); ?>;</script>
 <?php wp_footer(); ?>
 </body>
 </html>

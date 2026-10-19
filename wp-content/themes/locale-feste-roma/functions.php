@@ -32,12 +32,6 @@ function locale_feste_roma_assets() {
 		true
 	);
 
-	// Il bundle Lovable usa questa variabile per risolvere immagini e media del tema.
-	wp_add_inline_script(
-		'locale-feste-roma-app',
-		'window.localeFesteThemeUrl = ' . wp_json_encode( $theme_uri ) . ';',
-		'before'
-	);
 }
 add_action( 'wp_enqueue_scripts', 'locale_feste_roma_assets' );
 
