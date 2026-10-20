@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,25 +6,25 @@
 
 @layer base {
   :root {
-    --background: 228 22% 7%;
-    --foreground: 36 33% 97%;
-    --card: 228 19% 10%;
-    --card-foreground: 36 33% 97%;
-    --popover: 228 19% 10%;
-    --popover-foreground: 36 33% 97%;
-    --primary: 43 100% 57%;
-    --primary-foreground: 228 25% 8%;
-    --secondary: 229 16% 16%;
-    --secondary-foreground: 0 0% 95%;
-    --muted: 228 14% 19%;
-    --muted-foreground: 32 13% 70%;
-    --accent: 324 79% 59%;
+    --background: 24 10% 6%;
+    --foreground: 38 29% 92%;
+    --card: 24 8% 10%;
+    --card-foreground: 38 29% 92%;
+    --popover: 24 8% 10%;
+    --popover-foreground: 38 29% 92%;
+    --primary: 42 52% 65%;
+    --primary-foreground: 24 12% 7%;
+    --secondary: 30 7% 16%;
+    --secondary-foreground: 38 29% 92%;
+    --muted: 30 7% 16%;
+    --muted-foreground: 40 7% 64%;
+    --accent: 40 25% 46%;
     --accent-foreground: 0 0% 100%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
-    --border: 228 13% 23%;
-    --input: 228 13% 23%;
-    --ring: 43 100% 57%;
+    --border: 35 9% 23%;
+    --input: 35 9% 23%;
+    --ring: 42 52% 65%;
     --radius: 0.75rem;
 
     --sidebar-background: 0 0% 6%;
@@ -49,12 +49,12 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-    letter-spacing: -0.015em;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: inherit;
+    font-family: 'Playfair Display', Georgia, serif;
     @apply font-semibold;
   }
 
@@ -69,14 +69,9 @@
   }
 }
 
-/* Script font for logo */
-.font-script {
-  font-family: 'Great Vibes', cursive;
-}
-
 /* Gold gradient text */
 .text-gradient-gold {
-  background: linear-gradient(135deg, hsl(45 100% 60%), hsl(45 100% 45%), hsl(40 100% 40%));
+  background: linear-gradient(135deg, #f2dfab, #d4b97a 48%, #917f59);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,12 +96,53 @@ section {
   inset: 0;
   background: linear-gradient(
     180deg,
-    hsl(var(--background) / 0.98) 0%,
-    hsl(var(--background) / 0.87) 34%,
-    hsl(var(--background) / 0.79) 61%,
-    hsl(var(--background) / 0.98) 100%
+    hsl(var(--background) / 0.94) 0%,
+    hsl(var(--background) / 0.75) 45%,
+    hsl(var(--background) / 0.9) 100%
   );
 }
+
+.hero-title {
+  color: hsl(var(--foreground));
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(3.25rem, 7vw, 6.5rem);
+  font-weight: 600;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+}
+
+.hero-title span { color: hsl(var(--primary)); }
+
+.hero-proof {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid hsl(0 0% 100% / 0.14);
+  border-radius: 999px;
+  background: hsl(var(--background) / 0.62);
+  padding: 0.6rem 0.85rem;
+  color: hsl(var(--foreground) / 0.9);
+}
+
+.hero-proof svg { color: hsl(var(--primary)); }
+
+.hero-cta-primary,
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  min-height: 3.25rem;
+  border-radius: 999px;
+  padding: 0.75rem 1.35rem;
+  font-weight: 700;
+  transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease;
+}
+
+.hero-cta-primary { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.hero-cta-primary:hover { background: #e1c98e; }
+.hero-cta-secondary { border: 1px solid hsl(var(--primary) / 0.7); color: hsl(var(--primary)); }
+.hero-cta-secondary:hover { background: hsl(var(--primary) / 0.12); }
 
 .site-header {
   min-height: 68px;
