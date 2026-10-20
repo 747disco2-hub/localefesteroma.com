@@ -14,7 +14,7 @@ const faqs = [
       "Una festa privata è un evento riservato esclusivamente ai tuoi invitati. Nessun estraneo, nessuna sorpresa. Affitti uno spazio in esclusiva e decidi tu ogni dettaglio: musica, orari, menu, dress code. È la differenza tra 'organizzare una festa' e 'vivere la TUA festa'.",
   },
   {
-    question: "Quanto costa organizzare una festa privata a Roma nel 2025?",
+    question: "Quanto costa organizzare una festa privata a Roma nel 2026?",
     answer:
       "I prezzi variano enormemente: da 1.500€ per soluzioni base a 6.000€+ per eventi luxury. Il problema? Spesso i preventivi nascondono costi extra. Al 747 Disco partiamo da €1.590 all-inclusive: location, DJ, catering, open bar. Zero sorprese, tutto incluso.",
   },
@@ -39,7 +39,7 @@ export default function FestePrivateRoma() {
   return (
     <>
       <SEOHead
-        title="Feste Private Roma 2025 | Location Esclusiva + Pacchetti All-Inclusive"
+        title="Feste Private Roma 2026 | Location Esclusiva + Pacchetti All-Inclusive"
         description="Organizza la tua festa privata a Roma: location esclusiva, DJ, catering e open bar. Pacchetti all-inclusive da €1.590. Scopri 747 Disco, la discoteca privata a Ciampino."
         canonical="/feste-private-roma"
       />

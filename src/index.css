@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -49,12 +47,12 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     letter-spacing: -0.01em;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', Georgia, serif;
+    font-family: Georgia, "Times New Roman", serif;
     @apply font-semibold;
   }
 
@@ -104,7 +102,7 @@ section {
 
 .hero-title {
   color: hsl(var(--foreground));
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: Georgia, "Times New Roman", serif;
   font-size: clamp(3.25rem, 7vw, 6.5rem);
   font-weight: 600;
   letter-spacing: -0.055em;
@@ -189,7 +187,7 @@ body.admin-bar .site-header {
 }
 
 .faq-item:hover,
-.faq-item:has([data-state='open']) {
+.faq-item[open] {
   border-color: hsl(var(--primary) / 0.62);
   background: hsl(var(--card) / 0.98);
 }

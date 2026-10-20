@@ -38,7 +38,7 @@ export default function SalaFesteRoma() {
   return (
     <>
       <SEOHead
-        title="Sala Feste Roma 2025 | Prezzi, Pro e Contro + Alternativa Migliore"
+        title="Sala Feste Roma 2026 | Prezzi, Pro e Contro + Alternativa Migliore"
         description="Cerchi una sala feste a Roma? Guida completa con prezzi reali, cosa è incluso e quando conviene. Scopri quando una discoteca privata è la scelta migliore."
         canonical="/sala-feste-roma"
       />

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone, X } from "lucide-react";
-import logo from "@/assets/logo-747disco.png";
+import logo from "@/assets/logo-747disco-header.webp";
 
 const navItems = [
   { label: "Home", href: "/" },

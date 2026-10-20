@@ -1,9 +1,3 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { FAQItem } from "@/components/seo/FAQSchema";
 
 interface FAQSectionProps {
@@ -27,18 +21,17 @@ export default function FAQSection({
             Risposte chiare su costi, disponibilità e organizzazione della tua festa privata a Roma.
           </p>
         </header>
-        <Accordion type="single" collapsible className="w-full space-y-3">
+        <div className="w-full space-y-3">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="faq-item">
-              <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary no-underline hover:no-underline">
+            <details key={index} className="faq-item group">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left font-semibold text-foreground marker:content-none hover:text-primary">
                 {faq.question}
-              </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground leading-relaxed pr-10">
-                {faq.answer}
-              </AccordionContent>
-            </AccordionItem>
+                <span className="text-primary transition-transform duration-200 group-open:rotate-45" aria-hidden="true">+</span>
+              </summary>
+              <p className="pb-5 pr-10 leading-relaxed text-muted-foreground">{faq.answer}</p>
+            </details>
           ))}
-        </Accordion>
+        </div>
       </div>
     </section>
   );

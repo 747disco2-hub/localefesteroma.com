@@ -65,7 +65,7 @@ export default function LocationCompleanniRoma() {
   return (
     <>
       <SEOHead
-        title="Location Compleanni Roma 2025 | Guida + La Migliore Scelta"
+        title="Location Compleanni Roma 2026 | Guida + La Migliore Scelta"
         description="Cerchi la location perfetta per un compleanno a Roma? Confronto tra discoteche, sale feste e ristoranti. Scopri perché 747 Disco è la scelta #1 per feste con ballo."
         canonical="/location-compleanni-roma"
       />

@@ -61,6 +61,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/feste-per-teenagers-roma" className="text-muted-foreground hover:text-primary transition-colors">
+                  Feste Teenagers Roma
+                </Link>
+              </li>
+              <li>
                 <Link to="/location-compleanni-roma" className="text-muted-foreground hover:text-primary transition-colors">
                   Location Compleanni Roma
                 </Link>
