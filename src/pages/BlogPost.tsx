@@ -88,6 +88,7 @@ export default function BlogPost() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
+    mainEntityOfPage: `https://localefesteroma.com/blog/${post.slug}`,
     headline: post.title,
     description: post.excerpt,
     datePublished: post.publishedDate,
@@ -101,6 +102,7 @@ export default function BlogPost() {
       name: "LocaleFesteRoma",
       url: "https://localefesteroma.com",
     },
+    image: "https://localefesteroma.com/wp-content/themes/locale-feste-roma/assets/pista-da-ballo-CaYN8pI_.jpg",
   };
 
   return (

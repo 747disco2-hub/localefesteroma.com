@@ -7,6 +7,7 @@ interface SEOHeadProps {
   type?: "website" | "article";
   publishedTime?: string;
   modifiedTime?: string;
+  noIndex?: boolean;
 }
 
 export default function SEOHead({
@@ -16,6 +17,7 @@ export default function SEOHead({
   type = "website",
   publishedTime,
   modifiedTime,
+  noIndex = false,
 }: SEOHeadProps) {
   const siteUrl = "https://localefesteroma.com";
   const fullCanonical = canonical ? `${siteUrl}${canonical}` : siteUrl;
@@ -52,7 +54,7 @@ export default function SEOHead({
       <meta name="twitter:image" content={socialImage} />
 
       {/* Additional SEO */}
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="robots" content={noIndex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"} />
       <meta name="language" content="Italian" />
       <meta name="geo.region" content="IT-RM" />
       <meta name="geo.placename" content="Roma" />

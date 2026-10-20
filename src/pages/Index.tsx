@@ -107,11 +107,6 @@ const structuredData = {
       "closes": "02:00"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "127"
-  },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Pacchetti Feste",
