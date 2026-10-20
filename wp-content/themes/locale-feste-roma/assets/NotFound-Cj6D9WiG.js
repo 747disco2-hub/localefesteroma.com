@@ -1,0 +1,6 @@
+import{j as e}from"./motion-DoZYQZCl.js";import{c as a,S as t,L as s}from"./index-BEmbbnr2.js";/**
+ * @license lucide-react v0.462.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const n=a("House",[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8",key:"5wwlr5"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z",key:"1d0kgt"}]]),r=()=>e.jsxs(e.Fragment,{children:[e.jsx(t,{title:"Pagina non trovata | 747 Disco Roma",description:"La pagina richiesta non è disponibile.",noIndex:!0}),e.jsx("div",{className:"min-h-[60vh] flex items-center justify-center",children:e.jsxs("div",{className:"text-center max-w-md px-4",children:[e.jsx("h1",{className:"text-6xl font-display font-bold text-primary mb-4",children:"404"}),e.jsx("h2",{className:"text-2xl font-display font-semibold text-foreground mb-4",children:"Pagina Non Trovata"}),e.jsx("p",{className:"text-muted-foreground mb-8",children:"La pagina che stai cercando non esiste. Torna alla home per continuare."}),e.jsxs(s,{to:"/",className:"btn-primary inline-flex items-center justify-center gap-2",children:[e.jsx(n,{className:"h-4 w-4"}),"Torna alla Home"]})]})})]});export{r as default};

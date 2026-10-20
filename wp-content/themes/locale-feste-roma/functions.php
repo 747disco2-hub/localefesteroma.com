@@ -15,7 +15,7 @@ function locale_feste_roma_assets() {
 	$theme_uri = get_template_directory_uri();
 	$theme_dir = get_template_directory();
 	$css_file  = '/assets/index-CAGowsBU.css';
-	$js_file   = '/assets/index-BH2UKgkQ.js';
+	$js_file   = '/assets/index-BEmbbnr2.js';
 
 	wp_enqueue_style(
 		'locale-feste-roma-app',
