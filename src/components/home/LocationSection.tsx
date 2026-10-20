@@ -7,22 +7,22 @@ const features = [
   {
     icon: Music,
     title: "DJ Professionisti",
-    description: "DJ e animatori professionisti a tua disposizione per tutta la serata",
+    description: "Musica, ritmo e conduzione pensati per il tuo gruppo.",
   },
   {
     icon: Utensils,
     title: "Catering di Qualità",
-    description: "Menu personalizzati con ingredienti freschi e opzioni per tutti i gusti",
+    description: "Un menu da scegliere insieme, con soluzioni per ogni esigenza.",
   },
   {
     icon: Camera,
     title: "Servizio Foto",
-    description: "Immortala i momenti più belli con il nostro servizio fotografico incluso",
+    description: "I momenti importanti restano con te, anche dopo la festa.",
   },
   {
     icon: Sparkles,
-    title: "Allestimenti Scenografici",
-    description: "Personalizzazione completa con effetti speciali e temi su misura",
+    title: "Spazi da vivere",
+    description: "Un ambiente curato, pronto ad accogliere il tuo stile.",
   },
 ];
 
@@ -73,14 +73,13 @@ export default function LocationSection() {
             transition={{ duration: 0.6 }}
           >
             <h2 className="text-3xl md:text-4xl font-bold mb-6 uppercase tracking-wider">
-              Il <span className="text-primary">Locale</span>
+              Tutto quello che serve.<br /><span className="text-primary">Solo per voi.</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Lo storico locale 747 Disco ha cambiato completamente volto. Gli interni sono stati completamente rivisitati così come la strumentazione e gli spazi. 
-              La serietà e l'accoglienza invece, è rimasta quella di sempre per un locale che ha fatto la storia delle serate romane.
+              747 Disco è uno spazio privato a Ciampino, progettato per farvi stare bene insieme. Pista, bar, musica e servizio: ogni elemento è già al suo posto.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-10">
-              <strong className="text-foreground">Immagina di avere un'intera discoteca tutta per te e i tuoi amici</strong>, a Roma, senza estranei, con un'atmosfera coinvolgente e tutta l'energia di un vero club.
+              <strong className="text-foreground">Nessun estraneo, nessun dettaglio lasciato al caso.</strong> Tu scegli le persone e l’atmosfera; noi rendiamo semplice organizzare una serata memorabile.
             </p>
 
             <div className="grid sm:grid-cols-2 gap-6">

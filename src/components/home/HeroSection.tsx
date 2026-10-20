@@ -26,30 +26,29 @@ export default function HeroSection() {
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6 }}
       />
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_28%,hsl(var(--primary)/0.18),transparent_38%)]" />
 
       <div className="relative z-10 container mx-auto px-4 pt-24">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div 
-            className="inline-flex items-center gap-2 rounded-full bg-background/65 border border-primary/45 px-4 py-2 mb-7"
+            className="inline-flex items-center gap-2 rounded-full bg-background/65 border border-white/20 px-4 py-2 mb-7"
             initial={reduceMotion ? false : { opacity: 0, y: -12 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.08, duration: 0.45 }}
           >
             <Star className="h-4 w-4 text-primary" />
             <span className="text-sm uppercase tracking-wider text-primary">
-              La Discoteca Privata di Roma
+              747 Disco · Ciampino, Roma
             </span>
           </motion.div>
 
           {/* Logo */}
           <motion.h1 
-            className="font-script text-6xl md:text-8xl lg:text-9xl text-gradient-gold mb-5 drop-shadow-[0_8px_35px_hsl(var(--primary)/0.28)]"
+            className="text-5xl md:text-7xl lg:text-8xl font-semibold tracking-[-0.055em] text-foreground mb-5"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.15, duration: 0.55, ease: "easeOut" }}
           >
-            747 Disco
+            La tua festa privata.<br />Solo la tua.
           </motion.h1>
 
           {/* Tagline */}
@@ -59,7 +58,7 @@ export default function HeroSection() {
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.26, duration: 0.5 }}
           >
-            La tua festa. Solo i tuoi invitati. Zero compromessi.
+            Un locale interamente riservato a te e alle persone che scegli.
           </motion.p>
           
           <motion.p 
@@ -68,8 +67,7 @@ export default function HeroSection() {
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.34, duration: 0.5 }}
           >
-            Niente estranei, niente sorprese sul conto, niente impianti da karaoke. 
-            Solo tu, i tuoi amici, e una festa che ricorderete per sempre.
+            DJ, catering, open bar e foto in un unico progetto, curato con te dall’inizio alla fine.
           </motion.p>
 
           {/* USP Pills */}
@@ -124,7 +122,7 @@ export default function HeroSection() {
 
           {/* Price anchor */}
           <motion.div 
-            className="inline-block rounded-2xl bg-card/85 backdrop-blur border border-primary/55 px-8 py-6 shadow-[0_24px_70px_rgba(0,0,0,0.34)]"
+            className="inline-block rounded-[1.5rem] bg-background/90 border border-white/15 px-8 py-6"
             initial={reduceMotion ? false : { opacity: 0, y: 16 }}
             animate={reveal ?? { opacity: 1, y: 0 }}
             transition={{ delay: 0.62, duration: 0.5 }}
