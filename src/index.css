@@ -145,8 +145,22 @@ section {
 .hero-cta-secondary:hover { background: hsl(var(--primary) / 0.12); }
 
 .site-header {
-  min-height: 68px;
-  overflow: visible;
+  height: 72px !important;
+  min-height: 72px !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.site-header .header-row {
+  height: 72px !important;
+  min-height: 72px !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
+
+.site-header img {
+  max-height: 44px !important;
+  width: auto !important;
 }
 
 .faq-section {

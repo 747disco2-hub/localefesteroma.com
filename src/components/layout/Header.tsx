@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header className={`site-header fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${scrolled ? "bg-background/98 border-b border-white/10" : "bg-background/94 border-b border-white/5"}`}>
       <div className="container mx-auto px-4">
-        <div className="flex min-h-[68px] items-center justify-between gap-5">
+        <div className="header-row flex items-center justify-between gap-5">
           <Link to="/" className="flex shrink-0 items-center py-2" aria-label="747 Disco Roma, home">
             <img src={logo} alt="747 Disco Roma" className="h-11 w-auto object-contain" />
           </Link>
