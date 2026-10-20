@@ -163,6 +163,17 @@ section {
   width: auto !important;
 }
 
+/* La toolbar di WordPress è fissa e, per gli utenti loggati, altrimenti copre il menu. */
+body.admin-bar .site-header {
+  top: 32px !important;
+}
+
+@media screen and (max-width: 782px) {
+  body.admin-bar .site-header {
+    top: 46px !important;
+  }
+}
+
 .faq-section {
   background: hsl(var(--background));
 }
