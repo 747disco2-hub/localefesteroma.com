@@ -7,6 +7,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Festa 18 anni", href: "/festa-18-anni-roma" },
   { label: "Feste private", href: "/feste-private-roma" },
+  { label: "Teenagers", href: "/feste-per-teenagers-roma" },
   { label: "Location compleanni", href: "/location-compleanni-roma" },
   { label: "Sala feste", href: "/sala-feste-roma" },
 ];

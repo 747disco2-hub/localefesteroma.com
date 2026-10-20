@@ -70,6 +70,12 @@ const guideLinks = [
     description: "Confronto tra sale feste e discoteche private",
     href: "/sala-feste-roma",
   },
+  {
+    icon: Users,
+    title: "Feste Teenagers Roma",
+    description: "Feste per ragazzi dai 13 ai 17 anni, con formula dedicata",
+    href: "/feste-per-teenagers-roma",
+  },
 ];
 
 // Schema.org structured data for LocalBusiness

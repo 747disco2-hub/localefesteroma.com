@@ -10,6 +10,7 @@ import Festa18AnniRoma from "./pages/Festa18AnniRoma";
 import FestePrivateRoma from "./pages/FestePrivateRoma";
 import LocationCompleanniRoma from "./pages/LocationCompleanniRoma";
 import SalaFesteRoma from "./pages/SalaFesteRoma";
+import FesteTeenagersRoma from "./pages/FesteTeenagersRoma";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import NotFound from "./pages/NotFound";
@@ -30,6 +31,7 @@ const App = () => (
               <Route path="/feste-private-roma" element={<FestePrivateRoma />} />
               <Route path="/location-compleanni-roma" element={<LocationCompleanniRoma />} />
               <Route path="/sala-feste-roma" element={<SalaFesteRoma />} />
+              <Route path="/feste-per-teenagers-roma" element={<FesteTeenagersRoma />} />
               <Route path="/blog" element={<Blog />} />
               <Route path="/blog/:slug" element={<BlogPost />} />
               <Route path="*" element={<NotFound />} />
