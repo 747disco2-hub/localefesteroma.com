@@ -149,6 +149,8 @@ section {
   min-height: 72px !important;
   max-height: none !important;
   overflow: visible !important;
+  background-color: #100f0d !important;
+  border-bottom: 1px solid rgba(212, 185, 122, 0.2) !important;
 }
 
 .site-header .header-row {
